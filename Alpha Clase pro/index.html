@@ -21,17 +21,17 @@
         <!-- home  Start Section -->
         <!-- Home Screen -->
     
-        <section class="home min-h-screen gap-5 text-white font-anton flex flex-col justify-center items-center hidden">
+        <section id="home-screen" class="min-h-screen gap-5 text-white font-anton flex flex-col justify-center items-center ">
             <h1 class="text-8xl"> Gamer Clash pro</h1>
             <p class="font-poppins">Unleash Your Keyboard : Press “Enter” to Play</p>
-            <button class="font-poppins btn bg-white text-black">Play Now</button>
+            <button onclick="play()" class="font-poppins btn bg-white text-black">Play Now</button>
 
         
         </section>
     
         <!-- Play-Ground Section -->
     
-        <section class="play-ground">
+        <section id="play-ground" class=" hidden">
 
               <!-- Screen -->
             <div class="flex flex-col items-center gap-20 pt-20">
@@ -116,10 +116,26 @@
         </section>
     
         <!-- Score Section end -->
+        <!-- final score start -->
     
-        <section class="score">
+        <section class="score flex justify-center items-center min-h-screen hidden">
+          <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg ">
+            <h1 class="text-8xl">
+              <span class="font-extrabold">Score : </span>
+              <span>14</span>
+            </h1>
+            <button class="btn">Play Again</button>
+            <p>Practice will make you Perfect</p>
+
+
+          </div>
     
         </section>
 </main>
+
+
+
+<script src="./Scripts/utility.js"></script>
+<script src="./Scripts/alpha-clash.js"></script>
 </body>
 </html>
